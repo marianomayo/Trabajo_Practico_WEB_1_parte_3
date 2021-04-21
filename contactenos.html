@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/mylabelscript.js"></script>
+    <script src="js/menuResponsive.js"></script>
+    <title>My Label ® - Sitio Oficial</title>
+</head>
+<body>
+    <header>
+        <h1>My Label ®</h1>
+        <h3 class="sub-title">Ropa de Moda</h2>
+    </header>
+    
+    <nav>
+        <div class="menu">
+            <div class="btn_menu"><a>MENÚ</a></div>
+          <ul class="navigation">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="ropa.html">Nuestra ropa</a></li>
+               <li><a href="tabla.html">Carrito de compras</a></li>   
+               <li class="boton"><a href="contactenos.html">Contactenos</a></li>
+           </ul>      
+        </div>  
+      </nav>
+
+     <!--CONTENIDO CONTACTENOS-->
+    <section class="contactenos">
+        <div class="boxformulario"> 
+            <h2>Contact Us</h2>
+            <p>Hipolito Irigoyen 792, Timbre 2. Tandil, Buenos Aires, Argentina.
+                <br> 
+                contacto@mylabel.com / Whatsapp +54 9 2494642973.</p>
+            <div class="formulario">
+                <form action="">
+                    <div class="formulario-in">
+                        <label>Name and Surname </label>
+                        <input type="text" name="nombre" id="" required placeholder="Name and Surname">
+                    </div>
+                    <div class="formulario-in">
+                        <label>Enter your Email </label>
+                        <input type="email" name="email" id="" required placeholder="Email address">
+                    </div>
+                    <div class="formulario-in">
+                        <label>Subject </label>
+                        <input type="text" name="subject" id="" required placeholder="Subject">
+                    </div>
+                    <div class="formulario-in">
+                    <textarea name="comentarios" id=""  cols="30" rows="10" required placeholder="Write here"></textarea>
+                    </div>
+                    <div>
+                        <p>Para enviar verifica el captcha!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div>                
+            <div class="box-captcha">
+                <div>
+                    <h2>Verifica Captcha</h2>
+                </div>
+                <div class="captcha">
+                    <div>                        
+                        <p id="ramdom"></p>
+                    </div>
+                    <div>
+                        <input type="button" id="movercaptcha" value="Otro Numero">
+                    </div>                              
+                </div>
+                <div>                       
+                    <form action="">
+                        <label class="labelcaptcha" for="">Escriba y verifica con el boton</label>
+                        <input type="text" name="" id="inputUser" value="" required placeholder="Que Numero aparece?">
+                        <input type="button" id="btn-verificar" value="Verificar">
+                    </form>
+                </div>
+                <div>
+                    <p id="elValorEs"></p>                       
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h3 class="titulo-nav">My Label ®</h3>
+        </div>
+        <div>
+            <h4 class="titulo-nav">Navegador</h4>
+            <ol class="Lista-nav">
+                <li class="boton-down"><a href="index.html">Home</a></li>
+                <li class="boton-down"><a href="ropa.html">Nuestra Ropa</a></li>
+                <li class="boton-down"><a href="tabla.html">Carrito de compras</a></li>                
+                <li class="boton-down"><a href="contactenos.html">Contactenos</a></li>
+            </ol>
+        </div>
+        <div class="titulo-nav">
+            <h4>Forma de envio</h4>
+            <img src="img/oca.jpg" alt="oca" width="30px">
+            <img src="img/correoarg.jpg" alt="correo argentino" width="30px">
+        </div>
+        <div>
+            <h4 class="titulo-nav">Ayuda</h3>
+            <ol>
+                <li>Consulta stock</li>
+                <li>Formas de pago</li>
+                <li>Preguntas Frecuentes</li>
+                <li>Atencion al Cliente</li>
+            </ol>
+        </div>
+        <div>
+            <h4 class="titulo-nav">Legales</h3>
+            <ol>
+                <li>Terminos y condiciones</li>
+                <li>Politica de privacidad</li>                
+            </ol>
+        </div>
+        <div>
+            <h4 class="titulo-nav2">Medios de pago</h4>
+            <img class="titulo-nav2" src="img/visa.jpg" alt="visa" width="30px">
+            <img  src="img/mastercar.jpg" alt="american express" width="30px" >
+        </div>
+    </footer>
+ 
+</body>
+</html>

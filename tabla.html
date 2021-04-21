@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tablaDinamica.js"></script>
+    <script src="js/menuResponsive.js"></script>
+    <title>My Label ® - Sitio Oficial</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1>My Label ®</h1>
+        <h3 class="sub-title">Ropa de Moda</h2>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <div class="btn_menu"><a>MENÚ</a></div>
+          <ul class="navigation">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="ropa.html">Nuestra ropa</a></li>
+               <li><a href="tabla.html">Carrito de compras</a></li>               
+               <li class="boton"><a href="contactenos.html">Contactenos</a></li>
+           </ul>      
+        </div>  
+    </nav>
+
+
+    <section class="guiaTRopa">
+        <div class="box-tabla">
+            <div>
+                <h2>Tabla de compras</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Ropa</td>
+                            <td>Precio</td>
+                            <td>Editar</td>
+                            <td>Borrar</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+               
+            </div>            
+        </div>
+        <div class="box-agregar">
+            <div>
+                <p class="texto">Ingrese un numero mayor a 0</p>
+                <form action="">
+                    <input type="text" id="ropa" placeholder="Ingrese Producto" required>
+                    <input type="number" id="precio" placeholder="Ingrese Precio" required>
+                </form>
+            </div>
+            <div class="separar">
+               <form action=""> 
+                    <button type="button" id="agregar-tabla">Agregar</button>
+                    <button  type="button" id="agregar-tablaX3">Agregar 3 elementos</button>                 
+                </form>               
+                <form class="separar1" action="">
+                    <input type="text" id="productoAfiltrar" placeholder="Producto a filtrar" required>
+                    <button type="button" id="filtrar">Filtrar</button>
+                    <button type="button" id="volverAtras">Tabla sin filtro</button>
+                </form>
+                <div class="separar1">
+                    <form  class="aparecerDeEstaForma" action="">
+                        <input class="inputOculto" type="text" id="ERopa" placeholder="edite ropa">
+                        <input class="inputOculto" type="number" id="EPrecio" placeholder="edite precio">
+                        <div id="agregarBoton">
+    
+                        </div>         
+                    </form>
+                </div>
+            </div>
+        </div>       
+    </section>   
+    
+    
+
+    <footer>
+        <div>
+            <h3 class="titulo-nav">My Label ®</h3>
+        </div>
+        <div>
+            <h4 class="titulo-nav">Navegador</h4>
+            <ol class="Lista-nav">
+                <li class="boton-down"><a href="index.html">Home</a></li>
+                <li class="boton-down"><a href="ropa.html">Nuestra Ropa</a></li>
+                <li class="boton-down"><a href="tabla.html">Carrito de compras</a></li>                 
+                <li class="boton-down"><a href="contactenos.html">Contactenos</a></li>
+            </ol>
+        </div>
+        <div class="titulo-nav">
+            <h4>Forma de envio</h4>
+            <img src="img/oca.jpg" alt="oca" width="30px">
+            <img src="img/correoarg.jpg" alt="correo argentino" width="30px">
+        </div>
+        <div>
+            <h4 class="titulo-nav">Ayuda</h3>
+            <ol>
+                <li>Consulta stock</li>
+                <li>Formas de pago</li>
+                <li>Preguntas Frecuentes</li>
+                <li>Atencion al Cliente</li>
+            </ol>
+        </div>
+        <div>
+            <h4 class="titulo-nav">Legales</h3>
+            <ol>
+                <li>Terminos y condiciones</li>
+                <li>Politica de privacidad</li>                
+            </ol>
+        </div>
+        <div>
+            <h4 class="titulo-nav2">Medios de pago</h4>
+            <img class="titulo-nav2" src="img/visa.jpg" alt="visa" width="30px">
+            <img  src="img/mastercar.jpg" alt="american express" width="30px" >
+        </div>
+    </footer>    
+    
+</body>
+</html>

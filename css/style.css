@@ -1,0 +1,253 @@
+/*alineamos textos de header article y contactenos*/
+header, article, .contactenos{
+    text-align: center;
+}
+
+article, .guiaTRopa, .ropa, .contactenos, #coleccion{
+    background-image: url(../img/fondo.jpg);
+}
+.boxformulario, .box-captcha{
+    background-image: url(../img/fondoformulario.jpg);
+}
+/*corro el boton "MENU" UN POCO A LA DERECHA Y CENTRO*/
+.btn_menu {   
+    padding: 15px;    
+}
+
+/*Le doy css a los ul y al navegador(hago que desapazca el nav y lo hago encolumnado en vez de volteado*/
+ul.navigation {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+
+/*Agrando la letra y pongo el menu que sale a la derecha del "MENU" y le doy fondo de color*/
+.menu {    
+    width: 100%;
+    display: flex;
+    background-color: #d6d5d6;
+}
+
+   /* le doy display flex a esto porque si no le doy no aparece el menu responsive*/
+ul.navigation.show, .ropa {
+    display: flex;
+}
+
+/*Le saco la decoracion que tiene adentro, los puntos del navegador y le doy espaciado*/
+ul.navigation li {
+    list-style: none;
+    margin: 0px 0px;
+    padding: 30px 20px;
+}
+
+/*Le saco la decoracion (subrayado), y le pongo color negro a las letras del nav*/
+ul.navigation li a {
+    text-decoration: none;
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/*a los titulos h2 le agrando la letra*/
+h2{
+    font-size: 20px;
+}
+
+/*a los titulos h4 h1 y h2 le pongo subrayado*/
+h4, h1, h2{
+    text-decoration: underline;
+}
+
+/*Al subtitulo de la pagina le achico la letra*/
+.sub-title{
+    margin-top: -20px;
+}
+
+/*A los section le doy display flex*/
+section{
+    display: flex;         
+}
+
+#coleccion,.contactenos, .guiaTRopa, .boton-down{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.estiloPromo{
+    background-color: yellow;
+}
+.errorEnNumero{
+    background-color: red;
+    font-weight: 700;  
+}
+
+/*achico la imagen cuando esta en el mobile*/
+.img-grande{
+    width: 300px;
+}
+
+/*achico la imagen de la ropa o imagenes que tengan esta clase cuando esten en mobile*/
+.img-mediano{
+    width: 40px;
+    height: 40px;
+}
+
+/*separo la tabla un poco con los input y botones para agregar(siempre en mobile)*/
+.box-tabla{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/*pongo en columna los inputs y separo(siempre en mobile)*/
+.box-agregar{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contactenos, .guiaTRopa{
+    justify-content: space-around;
+}
+
+/*le pongo borde negro a la tabla y centro todo y la agrando un poco*/
+table, tr, td, th {border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 200px;
+}
+#ramdom{
+    font-size: xx-large;
+    margin-top: -10px;
+    margin-bottom: -1px;
+    background-color: coral;
+}
+/*separo un poco el titulo del navegador del footer*/
+.titulo-nav{
+    padding-left: 30px;
+}
+
+/*separo un poco el titulo nav2 del footer*/
+.titulo-nav2{
+    padding-left: 30px;
+}
+
+/*hago desaparecer ciertas fotos en el mobile*/
+.fotosdesktop, aside{
+    display: none;
+}
+
+/*le ponemos color al thead de la tabla*/
+thead{
+    background-color: pink;
+}
+.texto{
+    text-decoration: underline;
+}
+
+.inputOculto{
+    display: none;
+}
+.aparecerInput{
+    display: block;
+}
+.aparecerDeEstaForma{
+    display: flex;
+}
+.separar{
+    margin-top: 5px;
+}
+.separar1{
+    margin-top: 15px;
+}
+/*hago la media para que cuando se agrande la pantalla a mas de 600 se modifique el css y agarre esto*/
+@media only screen and (min-width:600px){
+
+    /*hago espaciado al footer+navegador y display*/
+    footer, .navegador{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*color del navegador*/
+    nav{
+        background-color: #d6d5d6;       
+    }
+
+    /*seguimos con los link en color negro*/
+    a{
+        color: black;
+    }
+
+    /*se le da display flex al aside de ropa para que aparezca (estaba desaparecido en mobile)*/
+    aside{
+        display: flex;
+    }
+    /*Al contactenos lo separo(aca esta el captcha) y tambien agarro las tablas y input y separo*/
+    section{
+        display: flex;
+        justify-content: space-around;                          
+    }
+    .fotosdesktop{
+        display: block;        
+    }
+    .contactenos, .guiaTRopa{
+        display: flex;
+        flex-direction: row;
+    }
+   
+   
+    /*separo un poco el captcha hacia abajo*/
+    .captcha {
+        margin-bottom: 20px;    
+    }
+
+    /*Agrando un poco los numeros del ramdom del captcha*/
+    .mostrarvalorcaptcha {
+        width: 100px;
+        height: 40px;
+        font-size: xx-large;
+    }
+    /*centro y encolumno el box del captcha y le pongo un borde de color*/
+    .box-captcha {
+        border: 2px solid lightgray ;
+        width: 250px;
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+
+    
+    /*Ocultamos cuando esta mayor a 600px en boton de menu del navegador*/
+    .btn_menu {
+        display: none;
+    }
+     
+    /* VOLVEAMOS EL NAVEGADOR YA QUE EN MOBILE ESTABA EN COLUMNA, AL PONERLE ROW QUEDA ACOSTADO */
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /*Agrando la imagen del index*/
+    .img-grande{
+        width: 800px; height: 500px;
+    }
+    .img-mediano{
+        width: 140px; height: 140px;
+    }
+    .lista-ropa{
+        margin-bottom: 40px;
+    }
+  
+
+        
+    
+   
+}
